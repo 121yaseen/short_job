@@ -1,0 +1,391 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Short Jobs </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Work+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+
+
+
+    <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  </head>
+  <body>
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+
+
+    <div class="site-navbar-wrap js-site-navbar bg-white">
+
+      <div class="container">
+        <div class="site-navbar bg-light">
+          <div class="py-1">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <h2 class="mb-0 site-logo"><a href="index.html">Short<strong class="font-weight-bold">Jobs</strong> </a></h2>
+              </div>
+              <div class="col-10">
+                <nav class="site-navigation text-right" role="navigation">
+                  <div class="container">
+                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+                    <ul class="site-menu js-clone-nav d-none d-lg-block">
+                      <li><a href="categories.html">For Candidates</a></li>
+                      <li class="has-children">
+                        <a href="category.html">For Employees</a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="category.html">Category</a></li>
+                          <li><a href="#">Browse Candidates</a></li>
+                          <li><a href="new-post.html">Post a Job</a></li>
+                          <li><a href="#">Employeer Profile</a></li>
+                          <li class="has-children">
+                            <a href="#">More Links</a>
+                            <ul class="dropdown">
+                              <li><a href="#">Browse Candidates</a></li>
+                              <li><a href="#">Post a Job</a></li>
+                              <li><a href="#">Employeer Profile</a></li>
+                            </ul>
+                          </li>
+
+                        </ul>
+                      </li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="http://localhost:8000/signup"><span class="bg-primary text-white py-3 px-4 rounded"><span class="icon-plus mr-3"></span>Signup</span></a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 113px;"></div>
+
+    <div class="site-blocks-cover overlay" style="background-image: url('static/images/hero_1.jpg');" data-aos="fade" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12" data-aos="fade">
+            <h1>Search Job</h1>
+            <form action="#">
+              <div class="row mb-3">
+                <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <input type="text" class="mr-3 form-control border-0 px-4" placeholder="job title, keywords or company name ">
+                    </div>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <div class="input-wrap">
+                        <span class="icon icon-room"></span>
+                      <input type="text" class="form-control form-control-block search-input  border-0 px-4" id="autocomplete" placeholder="city, province or region" onFocus="geolocate()">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <input type="submit" class="btn btn-search btn-primary btn-block" value="Search">
+                </div>
+              </div>
+              <div class="row">
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+        <div class="d-block d-md-flex border-bottom">
+          <div class="text-center p-4 item border-right" data-aos="fade">
+            <span class="flaticon-worker display-3 mb-3 d-block text-primary"></span>
+            <h2 class="h4">More Jobs Every Day</h2>
+            <p>Job lists are updated on daily basis. Every day hundreds of employeers are looking out for their daily chores. Choose the ones that suite you! </p>
+          </div>
+          <div class="text-center p-4 item" data-aos="fade">
+            <span class="flaticon-wrench display-3 mb-3 d-block text-primary"></span>
+            <h2 class="h4">Creative Jobs</h2>
+            <p>A platform to show off your taste in thinking out of box. Do it creative and impress your employeers </p>
+
+          </div>
+        </div>
+        <div class="d-block d-md-flex">
+          <div class="text-center p-4 item border-right" data-aos="fade">
+            <span class="flaticon-stethoscope display-3 mb-3 d-block text-primary"></span>
+            <h2 class="h4">No Skill Needed</h2>
+            <p>Worried that you are an unskilled person?<b>NOT HERE!</b> Jobs listed here needs no skill to do. Keep calm and work :)   </p>
+
+          </div>
+          <div class="text-center p-4 item" data-aos="fade">
+            <span class="flaticon-calculator display-3 mb-3 d-block text-primary"></span>
+            <h2 class="h4">Affordable Workers </h2>
+            <p>Want to have your work done without emptying your pocket? Congratulations! You have arrived at your destination</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="site-section block-15">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+            <h2>Recent Testimonies</h2>
+          </div>
+        </div>
+
+
+        <div class="nonloop-block-15 owl-carousel">
+
+
+            <div class="media-with-text">
+              <div class="img-border-sm mb-4">
+                <a href="#" class="image-play">
+                  <img src="static/images/img_1.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+              <h2 class="heading mb-0 h5">Reel Surfer</h2>
+              <span class="mb-3 d-block post-date">January 20, 2019 &bullet; By Neil Joglekar</span>
+              <p>"Short Jobs has been a life saver. Their strong pool of outsourced talent has helped me increase productivity and focus solely on my job"</p>
+            </div>
+
+            <div class="media-with-text">
+              <div class="img-border-sm mb-4">
+                <a href="#" class="image-play">
+                  <img src="static/images/img_2.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+              <h2 class="heading mb-0 h5">We Vorce</h2>
+              <span class="mb-3 d-block post-date">Marchy 3, 2018 &bullet; By Jeff Reynolds</span>
+              <p>"This website gives amazing access to amazing talent amazingly quickly. The quality of proposals I received blew me away. Within a few hours of posting my job it was already underway, with clear, professional communication at every step."</p>
+            </div>
+
+            <div class="media-with-text">
+              <div class="img-border-sm mb-4">
+                <a href="#" class="image-play">
+                  <img src="static/images/img_3.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+              <h2 class="heading mb-0 h5">Page Lever</h2>
+              <span class="mb-3 d-block post-date">February 11, 2019 &bullet; By Jeff Widman</span>
+              <p>"I posted several jobs on Short Jobs, and they immediately had tens and sometimes hundreds of bids. While the freelancers varied in skill level, the sites rating system made it easy to identify those who had successfully completed similar jobs."</p>
+            </div>
+
+            <div class="media-with-text">
+              <div class="img-border-sm mb-4">
+                <a href="#" class="image-play">
+                  <img src="static/images/img_1.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+              <h2 class="heading mb-0 h5">Med Monk</h2>
+              <span class="mb-3 d-block post-date">July 3, 2018 &bullet; By Abbas Mehdi</span>
+              <p>"Short Jobs helped me meet all my design needs fast and on budget!"</p>
+            </div>
+
+            <div class="media-with-text">
+              <div class="img-border-sm mb-4">
+                <a href="#" class="image-play">
+                  <img src="static/images/img_2.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+              <h2 class="heading mb-0 h5">Virool</h2>
+              <span class="mb-3 d-block post-date">November 18, 2018 &bullet; By Nikki Durkin</span>
+              <p>"Short Jobs allows me to have a virtual assistant on the cheap, which frees up my time to focus on building an awesome product. What's not to love?"</p>
+            </div>
+
+            <div class="media-with-text">
+              <div class="img-border-sm mb-4">
+                <a href="#" class="image-play">
+                  <img src="static/images/img_3.jpg" alt="" class="img-fluid">
+                </a>
+              </div>
+              <h2 class="heading mb-0 h5">Average Bear Software</h2>
+              <span class="mb-3 d-block post-date">October 11, 2018 &bullet; By Zach Bruhnke</span>
+              <p>"Short Jobs has been great for my business. I always get several bids from high quality candidates who can get the job done.</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <footer class="site-footer">
+
+            <h3 class="footer-heading mb-4 text-white">About Us</h3>
+            <p>  Short Jobs is the world's first freelancing and crowdsourcing platform for unskilled users and works. We connect over 38,728,698 employers and employeers globally from over 147 countries, regions and territories. Through our marketplace, employers can hire workers to do unskilled work in their neighbourhood areas and freebies can earn some extra bucks. We have one ultimate goal : connect clients to our community of freelancers who are available to hire by the hour or project</p>
+
+          </div>
+          <div class="col-md-6">
+            <br>
+              <div class="col-md-8 mx-auto text-center mb-5 section-heading">
+            <p><a href="#" class="btn btn-primary pill text-white px-4">Back to Top</a></p>
+          </div>
+
+              </div>
+          </div>
+
+
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'js/jquery-ui.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap-datepicker.min.js' %}"></script>
+  <script src="{% static 'js/aos.js' %}"></script>
+
+
+  <script src="{% static 'js/mediaelement-and-player.min.js' %}"></script>
+
+  <script src="{% static 'js/main.js' %}"></script>
+
+
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+                var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
+
+                for (var i = 0; i < total; i++) {
+                    new MediaElementPlayer(mediaElements[i], {
+                        pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
+                        shimScriptAccess: 'always',
+                        success: function () {
+                            var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
+                            for (var j = 0; j < targetTotal; j++) {
+                                target[j].style.visibility = 'visible';
+                            }
+                  }
+                });
+                }
+            });
+    </script>
+
+
+    <script>
+      // This example displays an address form, using the autocomplete feature
+      // of the Google Places API to help users fill in the information.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      var placeSearch, autocomplete;
+      var componentForm = {
+        street_number: 'short_name',
+        route: 'long_name',
+        locality: 'long_name',
+        administrative_area_level_1: 'short_name',
+        country: 'long_name',
+        postal_code: 'short_name'
+      };
+
+      function initAutocomplete() {
+        // Create the autocomplete object, restricting the search to geographical
+        // location types.
+        autocomplete = new google.maps.places.Autocomplete(
+            /** @type {!HTMLInputElement} */(document.getElementById('autocomplete')),
+            {types: ['geocode']});
+
+        // When the user selects an address from the dropdown, populate the address
+        // fields in the form.
+        autocomplete.addListener('place_changed', fillInAddress);
+      }
+
+      function fillInAddress() {
+        // Get the place details from the autocomplete object.
+        var place = autocomplete.getPlace();
+
+        for (var component in componentForm) {
+          document.getElementById(component).value = '';
+          document.getElementById(component).disabled = false;
+        }
+
+        // Get each component of the address from the place details
+        // and fill the corresponding field on the form.
+        for (var i = 0; i < place.address_components.length; i++) {
+          var addressType = place.address_components[i].types[0];
+          if (componentForm[addressType]) {
+            var val = place.address_components[i][componentForm[addressType]];
+            document.getElementById(addressType).value = val;
+          }
+        }
+      }
+
+      // Bias the autocomplete object to the user's geographical location,
+      // as supplied by the browser's 'navigator.geolocation' object.
+      function geolocate() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var geolocation = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+            var circle = new google.maps.Circle({
+              center: geolocation,
+              radius: position.coords.accuracy
+            });
+            autocomplete.setBounds(circle.getBounds());
+          });
+        }
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&libraries=places&callback=initAutocomplete"
+        async defer></script>
+
+  </body>
+</html>
